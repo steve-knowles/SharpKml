@@ -116,7 +116,7 @@ namespace SharpKml.Base
 
         private static void RegisterAssembly(Assembly assembly)
         {
-            foreach (var type in assembly.GetExportedTypes())
+            foreach (var type in assembly.GetTypes())
             {
                 if (type.IsSubclassOf(typeof(Element)))
                 {
